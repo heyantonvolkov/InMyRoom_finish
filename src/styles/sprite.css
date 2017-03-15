@@ -1,0 +1,42 @@
+$sprite: (
+	plans-item-design-small: (
+		offset-x: 0px,
+		offset-y: -26px,
+		width: 280px,
+		height: 15px,
+	),
+	plans-item-design: (
+		offset-x: 0px,
+		offset-y: 0px,
+		width: 370px,
+		height: 20px,
+	),
+	share-btn-fb: (
+		offset-x: -42px,
+		offset-y: -47px,
+		width: 8px,
+		height: 16px,
+	),
+	share-btn-ok: (
+		offset-x: -26px,
+		offset-y: -47px,
+		width: 10px,
+		height: 16px,
+	),
+	share-btn-ok2x: (
+		offset-x: 0px,
+		offset-y: -47px,
+		width: 20px,
+		height: 32px,
+	),
+	share-btn-vk: (
+		offset-x: -286px,
+		offset-y: -26px,
+		width: 15px,
+		height: 8px,
+	),
+);
+
+$spritesheet-width: 370px;
+$spritesheet-height: 79px;
+$spritesheet-image: "sprite.png";

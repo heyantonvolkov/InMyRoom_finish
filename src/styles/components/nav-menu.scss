@@ -1,0 +1,113 @@
+.fade-elem {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #565656;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.2s;
+
+  &.is-active {
+    opacity: 0.4;
+    z-index: 10;
+  }
+}
+
+.nav-menu {
+  position: fixed;
+  top: 125px;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  padding-top: 17px;
+  background-color: #F8F8F8;
+  overflow: hidden;
+  z-index: 11;
+  transition: all 0.3s;
+
+  &.is-active {
+    width: 332px;
+  }
+
+  .nav-menu-item {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 63px;
+    text-align: left;
+    font-size: 17px;
+    background-repeat: no-repeat;
+    background-position-x: 17px;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: #BF2E23;
+      color: white;
+    }
+  }
+}
+
+.nav-menu-item.nav-menu-item--360 {
+  background-image: url("../assets/icon-360_gray.png");
+  background-position-x: 20px;
+  background-position-y: 12px;
+
+  &:hover {
+    background-image: url("../assets/icon-360_white.png");
+  }
+}
+
+.nav-menu-item--plans {
+  background-image: url("../assets/icon-plans_gray.png");
+  background-position-y: 12px;
+
+  &:hover {
+    background-image: url("../assets/icon-plans_white.png");
+  }
+}
+
+.nav-menu-item--form {
+  background-image: url("../assets/icon-form_gray.png");
+  background-position-y: 12px;
+
+  &:hover {
+    background-image: url("../assets/icon-form_white.png");
+  }
+}
+
+.nav-menu-item--questions {
+  background-image: url("../assets/icon-questions_gray.png");
+  background-position-y: 12px;
+
+  &:hover {
+    background-image: url("../assets/icon-questions_white.png");
+  }
+}
+
+a.nav-menu-item.nav-menu-item--articles {
+  background-image: url("../assets/icon-articles_gray.png");
+  background-position-x: 20px;
+  background-position-y: 12px;
+
+  &:hover {
+    background-image: url("../assets/icon-articles_white.png");
+  }
+}
+
+a.nav-menu-item.nav-menu-item--product {
+  background-image: url("../assets/icon-product_gray.png");
+  background-position-x: 19px;
+  background-position-y: 12px;
+
+  &:hover {
+    background-image: url("../assets/icon-product_white.png");
+  }
+}
+
+@media screen and(max-width: 1342px) {
+  .nav-menu {
+    display: none;
+  }
+}

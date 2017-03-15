@@ -1,0 +1,155 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="/assets/main.css")
+
+    meta(property='fb:app_id', content='239854476109563')
+    meta(property='og:title', content='Спецпроект Finish и InMyRoom')
+    meta(property='og:description', content='Даже на кухне площадью 5 квадратных метров найдется место для посудомоечной машины. Не верите? Убедитесь сами!')
+    meta(property='og:image', content='https://cdn.inmyroom.ru/uploads/upload/file/478/finish-pick.jpg')
+    title Спецпроект Finish и InMyRoom
+
+    link(href='./assets/favicon.png', rel='shortcut icon', type='image/vnd.microsoft.icon')
+  body
+    .fade-elem
+    .header(data-component="header")
+      .container
+        .header_toggler.js-headerToggler
+          span
+          span
+          span
+
+        a.header_logo(href='http://www.inmyroom.ru')
+              img(width="200px" src="./assets/logo.svg")
+
+        ul.header_nav
+          li.header_nav_item
+            a.header_nav_link(href="//inmyroom.ru/my/feed" target="_blank") Моя лента
+          li.header_nav_item
+            a.header_nav_link(href="//inmyroom.ru/posts" target="_blank") Идеи
+          li.header_nav_item
+            a.header_nav_link(href="//inmyroom.ru/products" target="_blank") Магазин
+          li.header_nav_item
+            a.header_nav_link(href="//inmyroom.ru/photos" target="_blank") Фото
+          li.header_nav_item
+            a.header_nav_link(href="//inmyroom.ru/discussions" target="_blank") Советы
+          li.header_nav_item
+            a.header_nav_link(href="//inmyroom.ru/profi" target="_blank") Профи
+
+        a.header_promo-logo(href="http://www.finishinfo.ru/" target="_blank")
+          img(src='./assets/finish_logo.png')
+
+    .nav-menu
+      a.nav-menu-item.nav-menu-item--360(href="#360") Панорама 360
+      a.nav-menu-item.nav-menu-item--plans(href="#plans") Планировки
+      a.nav-menu-item.nav-menu-item--articles(href="#articles") Советы
+      a.nav-menu-item.nav-menu-item--form(href="#form") Помощь эксперта
+      //- a.nav-menu-item.nav-menu-item--questions(href="#questions") FAQ
+      a.nav-menu-item.nav-menu-item--product(href="#product") Узнать больше
+
+    .section.section-360#360
+      .container
+        h2.bold Обзор кухни в 360°
+        p Даже на кухне площадью 5 квадратных метров найдется место для посудомоечной машины. Не верите? Убедитесь сами!
+      .video-360#pano
+        iframe(src="http://3dpanorama.ru/underground/finish-pano2/")
+        .deactivate 
+          | Отключить 
+          br
+          | панораму
+        .fade-360
+        .video-360-click
+          img(src='./assets/video-360-click.png')
+          p 
+            | Зажимайте и двигайте
+            br
+            | Перемещайтесь по пространству и рассмотрите каждый уголок нашей кухни. Отключите панораму, чтобы прокрутить страницу.
+      a.header_promo-logo(href="http://www.finishinfo.ru/" target="_blank")
+          img(src='./assets/finish_logo.png')
+
+    .section.section-plans#plans
+      .container
+        h2.bold Самые популярные планировки
+        p Мы выбрали самые распространенные планировки маленьких кухонь и вместе с архитектором-дизайнером рассмотрели лучшие варианты их обустройства.
+        .slider.slider-plans
+          .slides#slider-plans
+
+    .section.section-articles#articles
+      .container
+        h2.bold Советы и лайфхаки по обустройству
+        p Мы делимся с вами удачными решениями, советами и лайфхаками по дизайну и обустройству маленькой кухни.
+        .slider.slider-articles
+          .slides#slider-articles
+
+    .section.section-form
+      .container
+        h2 Задать вопрос эксперту
+        p Опишите свою кухню, и мы поможем спланировать ее.
+        form.form#form
+          .form-container.form-container-left
+            .form-item
+              label Имя
+              input(type="text" name="name" placeholder="Как вас зовут?" required).name
+            .form-item
+              label E-mail
+              input(type="text" name="mail" placeholder="Как с вами связаться?" required).mail
+          .form-container.form-container-right
+            .form-item.textarea
+              label Описание
+              input(type="textarea" name="message" required).text
+            .file-add(data-component="addFile")
+              .files.is-empty
+                //- .file Image_001.jpeg
+                //-   .file-delete
+                //- .file Image_002.jpeg
+                //-   .file-delete
+              input.js-addFileInput(type='file' name="file[]" num="0")
+              .btn.btn-form.js-addFileBtn(num="0") Добавить фотографию
+              input.js-form(type="submit" value="Отправить")
+
+        .modal
+          .modal-name Мария
+          .modal-title благодарим вас за вопрос!
+          .modal-description 
+            | наши эксперты свяжутся 
+            br
+            | с вами в ближайшее время
+
+    //- .section.section-questions#questions
+    //-   .container
+    //-     h2 Часто задаваемые вопросы
+    //-     p Наши эксперты отвечают на ваши вопросы и помогают с обустройством малогабаритных кухонь.
+    //-     .questions
+
+
+    //-     .btn.btn-questions Смотреть больше
+
+    .section.section-product#product
+      .container
+        img(src="./assets/product_pick.png")
+        h2.bold Новый Finish Quantum Max
+        p Finish — ведущий мировой бренд высококачественных средств для посудомоечных машин, рекомендованный крупнейшими производителями. Мы  постоянно работаем над совершенствованием наших продуктов, чтобы сияющая чистотой посуда радовала вас и вашу семью долгие годы.
+
+        p Finish имеет широкую линейку средств, которые помогут достичь блестящих результатов в мытье посуды. 
+
+        p Один из инновационных продуктов Finish — таблетки Finish Quantum Max, которые справляются с любыми трудностями. Таблетка содержит уникальный Powerball c эффективной формулой, обеспечивающей идеальное очищение и блеск и предотвращающей образование накипи в посудомоечной машине. 
+
+        p Использовать таблетки Finish Quantum Max очень просто. Их даже не нужно разворачивать: просто поместите таблетку в отсек для моющего средства и запустите выбранную программу мытья посуды. Таблетки Finish Quantum Max рекомендуется использовать на всех моющих циклах, включая короткие (до 30 мин.).
+
+        a.btn.btn-product(target="_blank" href="http://www.finishinfo.ru/") Перейти на сайт
+
+        .shares
+          .share-btn.share-btn__fb(data-component='shareBtn', data-title=title, data-description=description, data-type="fb", data-url=url, data-image=image)
+            span.share-btn_count.js-shareBtnCounter
+          //- .share-btn.share-btn__ok(data-component='shareBtn', data-type="ok", , data-title=title, data-description=description, data-url=url, data-image=image)
+            span.share-btn_count.js-shareBtnCounter
+          .share-btn.share-btn__vk(data-component='shareBtn', data-type="vk", data-title=title, data-description=description, data-url=url, data-image=image)
+            span.share-btn_count.js-shareBtnCounter
+        .master
+          | Кухня для съемки 360 дизайн - 
+          a(href="https://www.facebook.com/intersmall/") Ксения Юсупова
+
+
+    script(src='/assets/main.js')

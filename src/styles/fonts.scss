@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../assets/proximanovaregular.woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../assets/proximanovabold.woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../assets/proximanovasemibold.woff");
+  font-weight: 700;
+  font-style: normal; }
+
+body {
+  font-family: "Proxima Nova";
+}

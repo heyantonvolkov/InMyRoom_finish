@@ -1,0 +1,30 @@
+h2 {
+  margin-bottom: 21px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 43px;
+
+  &.bold {
+    font-weight: 900;
+  }
+}
+
+p {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+@media screen and(max-width: 767px) {
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 27px;
+  }
+
+  p {
+    margin: 0 auto 30px;
+    width: 80%;
+    text-align: left;
+  }
+}
