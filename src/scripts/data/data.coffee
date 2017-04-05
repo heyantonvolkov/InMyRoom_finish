@@ -1,6 +1,11 @@
 module.exports =
   plans: [
     {
+      "image":"https://cdn.inmyroom.ru/uploads/post/teaser/a7/a79a/cropped_a79a7eb2-122c-4a08-8e80-0ed07043325f.jpg"
+      "url":"https://www.inmyroom.ru/posts/14489?token=25d26592e20eaec671e39256345d566e"
+      "title":"Маленькая кухня как место для приема гостей: 8 советов"
+    }
+    {
       "image": "https://cdn.inmyroom.ru/uploads/post/teaser/08/0805/cropped_0805a623-ed4c-499f-95e6-1e01c8099f3f.jpg"
       "url": "https://www.inmyroom.ru/posts/14457-kak-obustroit-kvadratnuyu-kuhnyu-3-varianta-planirovki"
       "title": "Как обустроить квадратную кухню: 3 варианта планировки"
